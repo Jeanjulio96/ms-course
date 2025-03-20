@@ -19,6 +19,10 @@ public class Role implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String roleName;
+	
+	public Role() {
+	    // Construtor padrão necessário para o Hibernate
+	}
 
 	public Role(Long id, String roleName) {
 		super();
